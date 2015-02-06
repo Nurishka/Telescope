@@ -1,6 +1,14 @@
 {
   "dependencies": [
     [
+      "accounts-base",
+      "1.1.2"
+    ],
+    [
+      "aldeed:simple-schema",
+      "1.2.0"
+    ],
+    [
       "application-configuration",
       "1.0.3"
     ],
@@ -33,8 +41,8 @@
       "1.0.2"
     ],
     [
-      "cmather:handlebars-server",
-      "2.0.0"
+      "chuangbo:cookie",
+      "1.1.0"
     ],
     [
       "coffeescript",
@@ -42,7 +50,7 @@
     ],
     [
       "ddp",
-      "1.0.11"
+      "1.0.12"
     ],
     [
       "deps",
@@ -61,10 +69,6 @@
       "1.0.1"
     ],
     [
-      "handlebars",
-      "1.0.1"
-    ],
-    [
       "html-tools",
       "1.0.2"
     ],
@@ -78,35 +82,35 @@
     ],
     [
       "iron:controller",
-      "1.0.0"
+      "1.0.3"
     ],
     [
       "iron:core",
-      "1.0.3"
+      "1.0.4"
     ],
     [
       "iron:dynamic-template",
-      "1.0.3"
+      "1.0.5"
     ],
     [
       "iron:layout",
-      "1.0.3"
+      "1.0.5"
     ],
     [
       "iron:location",
-      "1.0.3"
+      "1.0.4"
     ],
     [
       "iron:middleware-stack",
-      "1.0.0"
+      "1.0.3"
     ],
     [
       "iron:router",
-      "1.0.1"
+      "1.0.3"
     ],
     [
       "iron:url",
-      "1.0.3"
+      "1.0.4"
     ],
     [
       "jquery",
@@ -114,6 +118,14 @@
     ],
     [
       "json",
+      "1.0.1"
+    ],
+    [
+      "livedata",
+      "1.0.11"
+    ],
+    [
+      "localstorage",
       "1.0.1"
     ],
     [
@@ -125,6 +137,14 @@
       "1.1.3"
     ],
     [
+      "meteorhacks:fast-render",
+      "2.1.0"
+    ],
+    [
+      "meteorhacks:subs-manager",
+      "1.2.2"
+    ],
+    [
       "minifiers",
       "1.1.2"
     ],
@@ -134,7 +154,7 @@
     ],
     [
       "mongo",
-      "1.0.8"
+      "1.0.9"
     ],
     [
       "observe-sequence",
@@ -162,6 +182,10 @@
     ],
     [
       "routepolicy",
+      "1.0.2"
+    ],
+    [
+      "service-configuration",
       "1.0.2"
     ],
     [
@@ -197,6 +221,10 @@
       "0.2.9"
     ],
     [
+      "telescope-singleday",
+      "0.1.0"
+    ],
+    [
       "templating",
       "1.0.9"
     ],
@@ -222,6 +250,6 @@
     ]
   ],
   "pluginDependencies": [],
-  "toolVersion": "meteor-tool@1.0.35",
+  "toolVersion": "meteor-tool@1.0.36",
   "format": "1.0"
 }

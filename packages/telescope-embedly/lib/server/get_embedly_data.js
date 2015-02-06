@@ -12,7 +12,7 @@ getEmbedlyData = function (url) {
   }
 
   try {
-    
+
     var result = Meteor.http.get(extractBase, {
       params: {
         key: embedlyKey,
@@ -28,7 +28,7 @@ getEmbedlyData = function (url) {
     if (!!result.data.images && !!result.data.images.length) // there may not always be an image
       result.data.thumbnailUrl = result.data.images[0].url; // add thumbnailUrl as its own property
 
-    return _.pick(result.data, 'title', 'media', 'description', 'thumbnailUrl');
+    return _.pick(result.data, 'title', 'media', 'thumbnailUrl');
 
   } catch (error) {
     console.log(error)

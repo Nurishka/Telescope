@@ -181,6 +181,7 @@
 	.user-avatar{
 		border-radius: 100px;
 		.avatar{
+			color: #f28544;
 			height: 30px;
 			width: 30px;
 		}
@@ -218,7 +219,7 @@
 			border-radius: 0 0 3px 3px;
 		}
 		@include medium-large{
-			border-radius: 0 0 0 3px;			
+			border-radius: 0 0 0 3px;
 		}
 		position:relative;
 		display:block;

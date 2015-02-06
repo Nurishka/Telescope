@@ -97,7 +97,7 @@
 	&.empty {
 		.search-field {
 			width: $compressed-width;
-			background: white(0.1);
+			background: white(0.5);
 			&:focus {
 				background: white;
 				width: $expanded-width;

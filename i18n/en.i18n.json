@@ -125,11 +125,12 @@
 
   // Post submit & edit
   "created": "Created",
-  "title": "Title",
+  "title": "Book Title",
   "suggest_title": "Suggest title",
-  "url": "URL",
+  "url": "Amazon Link to Book",
   "short_url": "Short URL",
-  "body": "Body",
+  "body": "Book Description",
+  "bookAuthor": "Book Author",
   "category": "Category",
   "inactive_": "Inactive?",
   "sticky_": "Sticky?",

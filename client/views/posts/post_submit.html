@@ -1,7 +1,19 @@
 <template name="post_submit">
+  <div class="grid grid-module">
+    <p> Guidelines for book posts: </p>
+    <ul class="guidelines-list">
+      <li> Amazon links only.</li>
+      <li> Categories are optional, but they would be incredibly helpful for navigation. </li>
+      <li> Description are also optional, but we would love to hear your opinion about the book you're posting. </li>
+      <li> Please, avoid spoilers in fiction book descriptions.</li>
+      <li> Links to summaries in non-fiction book descriptions are encouraged!</li>
+    </ul>
+    <p> We moderate all sumbssions and try to approve all books as soon as we can!</p>
+    <p> If you have any questions, contact us: exuperyapp@gmail.com </p>
+  </div>
 
   <div class="grid grid-module">
     {{> quickForm collection="Posts" id="submitPostForm" template="telescope" label-class="control-label" input-col-class="controls" type="method" meteormethod="submitPost"}}
   </div>
-  
+
 </template>

@@ -38,6 +38,7 @@ postSchemaObject = {
     type: String,
     optional: false,
     autoform: {
+      placeholder: "How is that lovely book called?",
       editable: true
     }
   },
@@ -45,8 +46,17 @@ postSchemaObject = {
     type: String,
     optional: true,
     autoform: {
+      placeholder: "(Optional) Why do you want to share this book?",
       editable: true,
       rows: 5
+    }
+  },
+  bookAuthor: {
+    type: String,
+    optional: false,
+    autoform: {
+      placeholder: "Who spent countless hours crafting it?",
+      editable: true
     }
   },
   htmlBody: {
@@ -373,6 +383,7 @@ submitPost = function (post) {
 // ----------------------------------------- Methods ----------------------------------------- //
 // ------------------------------------------------------------------------------------------- //
 
+postClicks = [];
 postViews = [];
 
 Meteor.methods({
@@ -533,11 +544,23 @@ Meteor.methods({
     var view = {_id: postId, userId: this.userId, sessionId: sessionId};
 
     if(_.where(postViews, view).length == 0){
-      postViews.push(view);
-      Posts.update(postId, { $inc: { viewCount: 1 }});
+        postViews.push(view);
+        Posts.update(postId, { $inc: { viewCount: 1 }});
     }
   },
-  
+
+  increasePostClicks: function(postId, sessionId){
+    this.unblock();
+
+    // only let clients increment a post's click counter once per session
+    var click = {_id: postId, userId: this.userId, sessionId: sessionId};
+
+    if(_.where(postClicks, click).length == 0){
+      postClicks.push(click);
+      Posts.update(postId, { $inc: { clickCount: 1 }});
+    }
+  },
+
   deletePostById: function(postId) {
     // remove post comments
     // if(!this.isSimulation) {
